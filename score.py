@@ -12,12 +12,12 @@ for i in range(20):
     a[i].append(a[i][2] + a[i][3] + a[i][4]) #총점
     a[i].append(a[i][5] / 3) #평균
 
-kt = 0; et = 0; mt = 0;
+kor = 0; eng = 0; mat = 0;
 
 for i in range(20):
-    kt = kt + a[i][2] # 국어총점
-    et = et + a[i][3] # 영어총점
-    mt = mt + a[i][4] # 수학총점
+    kor = kor + a[i][2] # 국어총점
+    eng = eng + a[i][3] # 영어총점
+    mat = mat + a[i][4] # 수학총점
 
 
 #파일출력
@@ -33,4 +33,4 @@ with open("c:\\score\\report.txt","w") as f2:
 
     print("==============================", file = f2)
 
-    print("평균 :            {:.1f} {:.1f} {:.1f}         {:.1f}".format(kt/20, et/20, mt/20, (kt+et+mt)/30), file = f2)
+    print("평균 :            {:.1f} {:.1f} {:.1f}         {:.1f}".format(kor/20, eng/20, mat/20, (kor+eng+mat)/30), file = f2)
